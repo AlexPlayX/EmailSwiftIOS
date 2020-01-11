@@ -1,0 +1,698 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F5A9D65C20F014229569234 /* libPods-MailAD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D760B838ADA75F815C79BBD8 /* libPods-MailAD.a */; };
+		FA0645D8229EF832001CC2B2 /* CellMas.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0645D7229EF832001CC2B2 /* CellMas.swift */; };
+		FA0645DC229F1226001CC2B2 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0645DB229F1226001CC2B2 /* Authentication.swift */; };
+		FA0645DE229FE561001CC2B2 /* Mail.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0645DD229FE561001CC2B2 /* Mail.swift */; };
+		FA0F33FE2298B678000C1870 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0F33FD2298B678000C1870 /* UserData.swift */; };
+		FA52BCD3229807EE009650A2 /* libMailCore-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA52BCD2229807EE009650A2 /* libMailCore-ios.a */; };
+		FA5A905B2295DB58007FA55A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5A905A2295DB58007FA55A /* ViewController.swift */; };
+		FA5A90602295DB5B007FA55A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA5A905F2295DB5B007FA55A /* Assets.xcassets */; };
+		FA5A90632295DB5B007FA55A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA5A90612295DB5B007FA55A /* LaunchScreen.storyboard */; };
+		FA5A906E2295DB5B007FA55A /* MailADTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5A906D2295DB5B007FA55A /* MailADTests.swift */; };
+		FA5A90792295DB5C007FA55A /* MailADUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5A90782295DB5C007FA55A /* MailADUITests.swift */; };
+		FA5A90872295DB97007FA55A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA5A90862295DB96007FA55A /* Main.storyboard */; };
+		FA6300CD229997C3008BA13D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6300CC229997C3008BA13D /* AppDelegate.swift */; };
+		FA6300D0229997F8008BA13D /* MailAD.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA6300CE229997F8008BA13D /* MailAD.xcdatamodeld */; };
+		FA7C9118229ABF510049A472 /* Mails.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7C9117229ABF510049A472 /* Mails.swift */; };
+		FA9771AF22988FA60046BCBB /* MailWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9771AE22988FA60046BCBB /* MailWork.swift */; };
+		FA9771B0229893B10046BCBB /* MailWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9771AE22988FA60046BCBB /* MailWork.swift */; };
+		FA9771B1229893B20046BCBB /* MailWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9771AE22988FA60046BCBB /* MailWork.swift */; };
+		FAC9CC5422A530B500C96B76 /* SentMail.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC9CC5322A530B500C96B76 /* SentMail.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA5A906A2295DB5B007FA55A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA5A904D2295DB58007FA55A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA5A90542295DB58007FA55A;
+			remoteInfo = MailAD;
+		};
+		FA5A90752295DB5C007FA55A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA5A904D2295DB58007FA55A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA5A90542295DB58007FA55A;
+			remoteInfo = MailAD;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		46BBE531280998052DCF9EC6 /* Pods-MailAD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MailAD.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MailAD/Pods-MailAD.debug.xcconfig"; sourceTree = "<group>"; };
+		BDF3A2A2381CBDBDDA9C9DE4 /* Pods-MailAD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MailAD.release.xcconfig"; path = "Pods/Target Support Files/Pods-MailAD/Pods-MailAD.release.xcconfig"; sourceTree = "<group>"; };
+		D760B838ADA75F815C79BBD8 /* libPods-MailAD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MailAD.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA0645D7229EF832001CC2B2 /* CellMas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellMas.swift; sourceTree = "<group>"; };
+		FA0645DB229F1226001CC2B2 /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
+		FA0645DD229FE561001CC2B2 /* Mail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mail.swift; sourceTree = "<group>"; };
+		FA0F33FD2298B678000C1870 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		FA52BCD2229807EE009650A2 /* libMailCore-ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libMailCore-ios.a"; path = "Pods/mailcore2-ios/lib/libMailCore-ios.a"; sourceTree = "<group>"; };
+		FA5A90552295DB58007FA55A /* MailAD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MailAD.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA5A905A2295DB58007FA55A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FA5A905F2295DB5B007FA55A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA5A90622295DB5B007FA55A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA5A90642295DB5B007FA55A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA5A90692295DB5B007FA55A /* MailADTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MailADTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA5A906D2295DB5B007FA55A /* MailADTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailADTests.swift; sourceTree = "<group>"; };
+		FA5A906F2295DB5B007FA55A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA5A90742295DB5C007FA55A /* MailADUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MailADUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA5A90782295DB5C007FA55A /* MailADUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailADUITests.swift; sourceTree = "<group>"; };
+		FA5A907A2295DB5C007FA55A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA5A90862295DB96007FA55A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		FA6300CC229997C3008BA13D /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../../MailA/MailA/AppDelegate.swift; sourceTree = "<group>"; };
+		FA6300CF229997F8008BA13D /* MailA.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MailA.xcdatamodel; sourceTree = "<group>"; };
+		FA7C9117229ABF510049A472 /* Mails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mails.swift; sourceTree = "<group>"; };
+		FA9771AE22988FA60046BCBB /* MailWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailWork.swift; sourceTree = "<group>"; };
+		FAC9CC5322A530B500C96B76 /* SentMail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentMail.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA5A90522295DB58007FA55A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA52BCD3229807EE009650A2 /* libMailCore-ios.a in Frameworks */,
+				5F5A9D65C20F014229569234 /* libPods-MailAD.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA5A90662295DB5B007FA55A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA5A90712295DB5C007FA55A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		797304AB3B9072341285E5ED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				46BBE531280998052DCF9EC6 /* Pods-MailAD.debug.xcconfig */,
+				BDF3A2A2381CBDBDDA9C9DE4 /* Pods-MailAD.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DDC9C57B223ADCA08721ABD6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA52BCD2229807EE009650A2 /* libMailCore-ios.a */,
+				D760B838ADA75F815C79BBD8 /* libPods-MailAD.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA5A904C2295DB58007FA55A = {
+			isa = PBXGroup;
+			children = (
+				FA5A90572295DB58007FA55A /* MailAD */,
+				FA5A906C2295DB5B007FA55A /* MailADTests */,
+				FA5A90772295DB5C007FA55A /* MailADUITests */,
+				FA5A90562295DB58007FA55A /* Products */,
+				797304AB3B9072341285E5ED /* Pods */,
+				DDC9C57B223ADCA08721ABD6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FA5A90562295DB58007FA55A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA5A90552295DB58007FA55A /* MailAD.app */,
+				FA5A90692295DB5B007FA55A /* MailADTests.xctest */,
+				FA5A90742295DB5C007FA55A /* MailADUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA5A90572295DB58007FA55A /* MailAD */ = {
+			isa = PBXGroup;
+			children = (
+				FA6300CC229997C3008BA13D /* AppDelegate.swift */,
+				FA5A905A2295DB58007FA55A /* ViewController.swift */,
+				FA7C9117229ABF510049A472 /* Mails.swift */,
+				FA0645DB229F1226001CC2B2 /* Authentication.swift */,
+				FAC9CC5322A530B500C96B76 /* SentMail.swift */,
+				FA0645DD229FE561001CC2B2 /* Mail.swift */,
+				FA0645D7229EF832001CC2B2 /* CellMas.swift */,
+				FA9771AE22988FA60046BCBB /* MailWork.swift */,
+				FA0F33FD2298B678000C1870 /* UserData.swift */,
+				FA5A905F2295DB5B007FA55A /* Assets.xcassets */,
+				FA5A90862295DB96007FA55A /* Main.storyboard */,
+				FA5A90612295DB5B007FA55A /* LaunchScreen.storyboard */,
+				FA5A90642295DB5B007FA55A /* Info.plist */,
+				FA6300CE229997F8008BA13D /* MailAD.xcdatamodeld */,
+			);
+			path = MailAD;
+			sourceTree = "<group>";
+		};
+		FA5A906C2295DB5B007FA55A /* MailADTests */ = {
+			isa = PBXGroup;
+			children = (
+				FA5A906D2295DB5B007FA55A /* MailADTests.swift */,
+				FA5A906F2295DB5B007FA55A /* Info.plist */,
+			);
+			path = MailADTests;
+			sourceTree = "<group>";
+		};
+		FA5A90772295DB5C007FA55A /* MailADUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FA5A90782295DB5C007FA55A /* MailADUITests.swift */,
+				FA5A907A2295DB5C007FA55A /* Info.plist */,
+			);
+			path = MailADUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA5A90542295DB58007FA55A /* MailAD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA5A907D2295DB5C007FA55A /* Build configuration list for PBXNativeTarget "MailAD" */;
+			buildPhases = (
+				593284D67CFD3689762F7BBE /* [CP] Check Pods Manifest.lock */,
+				FA5A90512295DB58007FA55A /* Sources */,
+				FA5A90522295DB58007FA55A /* Frameworks */,
+				FA5A90532295DB58007FA55A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MailAD;
+			productName = MailAD;
+			productReference = FA5A90552295DB58007FA55A /* MailAD.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FA5A90682295DB5B007FA55A /* MailADTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA5A90802295DB5C007FA55A /* Build configuration list for PBXNativeTarget "MailADTests" */;
+			buildPhases = (
+				FA5A90652295DB5B007FA55A /* Sources */,
+				FA5A90662295DB5B007FA55A /* Frameworks */,
+				FA5A90672295DB5B007FA55A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA5A906B2295DB5B007FA55A /* PBXTargetDependency */,
+			);
+			name = MailADTests;
+			productName = MailADTests;
+			productReference = FA5A90692295DB5B007FA55A /* MailADTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FA5A90732295DB5C007FA55A /* MailADUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA5A90832295DB5C007FA55A /* Build configuration list for PBXNativeTarget "MailADUITests" */;
+			buildPhases = (
+				FA5A90702295DB5C007FA55A /* Sources */,
+				FA5A90712295DB5C007FA55A /* Frameworks */,
+				FA5A90722295DB5C007FA55A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA5A90762295DB5C007FA55A /* PBXTargetDependency */,
+			);
+			name = MailADUITests;
+			productName = MailADUITests;
+			productReference = FA5A90742295DB5C007FA55A /* MailADUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA5A904D2295DB58007FA55A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Алексей";
+				TargetAttributes = {
+					FA5A90542295DB58007FA55A = {
+						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
+					};
+					FA5A90682295DB5B007FA55A = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = FA5A90542295DB58007FA55A;
+					};
+					FA5A90732295DB5C007FA55A = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = FA5A90542295DB58007FA55A;
+					};
+				};
+			};
+			buildConfigurationList = FA5A90502295DB58007FA55A /* Build configuration list for PBXProject "MailAD" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA5A904C2295DB58007FA55A;
+			productRefGroup = FA5A90562295DB58007FA55A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA5A90542295DB58007FA55A /* MailAD */,
+				FA5A90682295DB5B007FA55A /* MailADTests */,
+				FA5A90732295DB5C007FA55A /* MailADUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA5A90532295DB58007FA55A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA5A90632295DB5B007FA55A /* LaunchScreen.storyboard in Resources */,
+				FA5A90602295DB5B007FA55A /* Assets.xcassets in Resources */,
+				FA5A90872295DB97007FA55A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA5A90672295DB5B007FA55A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA5A90722295DB5C007FA55A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		593284D67CFD3689762F7BBE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MailAD-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA5A90512295DB58007FA55A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA0645DE229FE561001CC2B2 /* Mail.swift in Sources */,
+				FA6300CD229997C3008BA13D /* AppDelegate.swift in Sources */,
+				FAC9CC5422A530B500C96B76 /* SentMail.swift in Sources */,
+				FA0645D8229EF832001CC2B2 /* CellMas.swift in Sources */,
+				FA5A905B2295DB58007FA55A /* ViewController.swift in Sources */,
+				FA6300D0229997F8008BA13D /* MailAD.xcdatamodeld in Sources */,
+				FA7C9118229ABF510049A472 /* Mails.swift in Sources */,
+				FA0645DC229F1226001CC2B2 /* Authentication.swift in Sources */,
+				FA0F33FE2298B678000C1870 /* UserData.swift in Sources */,
+				FA9771AF22988FA60046BCBB /* MailWork.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA5A90652295DB5B007FA55A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA9771B0229893B10046BCBB /* MailWork.swift in Sources */,
+				FA5A906E2295DB5B007FA55A /* MailADTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA5A90702295DB5C007FA55A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA9771B1229893B20046BCBB /* MailWork.swift in Sources */,
+				FA5A90792295DB5C007FA55A /* MailADUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA5A906B2295DB5B007FA55A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA5A90542295DB58007FA55A /* MailAD */;
+			targetProxy = FA5A906A2295DB5B007FA55A /* PBXContainerItemProxy */;
+		};
+		FA5A90762295DB5C007FA55A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA5A90542295DB58007FA55A /* MailAD */;
+			targetProxy = FA5A90752295DB5C007FA55A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FA5A90612295DB5B007FA55A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA5A90622295DB5B007FA55A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA5A907B2295DB5C007FA55A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA5A907C2295DB5C007FA55A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA5A907E2295DB5C007FA55A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46BBE531280998052DCF9EC6 /* Pods-MailAD.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YJJWT3N6UE;
+				INFOPLIST_FILE = MailAD/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/mailcore2-ios/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SPOVM.MailAD;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MailAD/MailAD-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA5A907F2295DB5C007FA55A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDF3A2A2381CBDBDDA9C9DE4 /* Pods-MailAD.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YJJWT3N6UE;
+				INFOPLIST_FILE = MailAD/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/mailcore2-ios/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SPOVM.MailAD;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MailAD/MailAD-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FA5A90812295DB5C007FA55A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YJJWT3N6UE;
+				INFOPLIST_FILE = MailADTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SPOVM.MailADTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MailAD.app/MailAD";
+			};
+			name = Debug;
+		};
+		FA5A90822295DB5C007FA55A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YJJWT3N6UE;
+				INFOPLIST_FILE = MailADTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SPOVM.MailADTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MailAD.app/MailAD";
+			};
+			name = Release;
+		};
+		FA5A90842295DB5C007FA55A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YJJWT3N6UE;
+				INFOPLIST_FILE = MailADUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SPOVM.MailADUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MailAD;
+			};
+			name = Debug;
+		};
+		FA5A90852295DB5C007FA55A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YJJWT3N6UE;
+				INFOPLIST_FILE = MailADUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SPOVM.MailADUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MailAD;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA5A90502295DB58007FA55A /* Build configuration list for PBXProject "MailAD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA5A907B2295DB5C007FA55A /* Debug */,
+				FA5A907C2295DB5C007FA55A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA5A907D2295DB5C007FA55A /* Build configuration list for PBXNativeTarget "MailAD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA5A907E2295DB5C007FA55A /* Debug */,
+				FA5A907F2295DB5C007FA55A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA5A90802295DB5C007FA55A /* Build configuration list for PBXNativeTarget "MailADTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA5A90812295DB5C007FA55A /* Debug */,
+				FA5A90822295DB5C007FA55A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA5A90832295DB5C007FA55A /* Build configuration list for PBXNativeTarget "MailADUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA5A90842295DB5C007FA55A /* Debug */,
+				FA5A90852295DB5C007FA55A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FA6300CE229997F8008BA13D /* MailAD.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FA6300CF229997F8008BA13D /* MailA.xcdatamodel */,
+			);
+			currentVersion = FA6300CF229997F8008BA13D /* MailA.xcdatamodel */;
+			path = MailAD.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FA5A904D2295DB58007FA55A /* Project object */;
+}

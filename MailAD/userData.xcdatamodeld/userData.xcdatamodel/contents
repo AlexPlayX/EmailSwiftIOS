@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14490.99" systemVersion="18E226" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="UsserDataFile" representedClassName=".UsserDataFile" isAbstract="YES" syncable="YES" codeGenerationType="class">
+        <attribute name="mail" transient="YES" attributeType="String" preserveAfterDeletion="YES" spotlightIndexingEnabled="YES" storedInTruthFile="YES" syncable="YES"/>
+        <attribute name="mailStat" attributeType="String" syncable="YES"/>
+        <attribute name="userMailMR" attributeType="String" syncable="YES"/>
+        <attribute name="userPassMR" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="UsserDataFile" positionX="-45" positionY="0" width="128" height="103"/>
+    </elements>
+</model>
