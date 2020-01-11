@@ -12,9 +12,9 @@ import Foundation
 import CoreData
 
 class ViewController: UIViewController{
-    var login:String!
-    var password:String!
-    var sistem:String!
+    public var login:String!
+    public var password:String!
+    public var sistem:String!
     
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

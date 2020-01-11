@@ -20,7 +20,7 @@ class MailWor {
         hostnameMRs="smtp.yandex.ru"
     }
 //    let user:UserData = UserData()
-    func mailSent(mailSender:String?, mailTo:String?, messagTxt:String?, hader:String?){
+   public func mailSent(mailSender:String?, mailTo:String?, messagTxt:String?, hader:String?){
 
     let smtSession = MCOSMTPSession()
     smtSession.hostname = hostnameMRs
@@ -44,7 +44,7 @@ class MailWor {
 
     }
 
-    func inputMails()  {
+    public func inputMails()  {
         
         let imapsession = MCOIMAPSession()
         imapsession.hostname = hostnameMRi
@@ -83,7 +83,7 @@ class MailWor {
     }
 
 
-    func parsText(text:[Character])->String{
+    private func parsText(text:[Character])->String{
         var tex: Array<Character> = Array<Character>(text)
         var i = 0
         var textDatCh = String()
@@ -116,7 +116,7 @@ class MailWor {
     }
 
 
-    func parsHeaderAndOtherInfo(inbox:[Character])->(hader:[String],massID:[String],from:[String]){
+    private func parsHeaderAndOtherInfo(inbox:[Character])->(hader:[String],massID:[String],from:[String]){
         var i = 0
         var inbo:Array<Character> = Array<Character>(inbox)
         var header = [Character]()

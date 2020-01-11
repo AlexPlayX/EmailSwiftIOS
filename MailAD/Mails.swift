@@ -51,7 +51,7 @@ class Mails: ViewController, UITableViewDataSource, UITableViewDelegate{
         }
     }
 
-    func saveMessag(messegHader:String,massegID:String,fromMail:String,mass:String) {
+    public func saveMessag(messegHader:String,massegID:String,fromMail:String,mass:String) {
         var flagRepeat:Bool = true
          let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
         do {
@@ -114,7 +114,7 @@ class Mails: ViewController, UITableViewDataSource, UITableViewDelegate{
         tableView.reloadData()
     }
 
-    func addMails() {
+    public func addMails() {
         let  mailSer : MailWor = MailWor()
         mailSer.inputMails()
     }

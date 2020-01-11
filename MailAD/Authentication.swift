@@ -54,7 +54,7 @@ class Authentication:ViewController{
     }
 
 
-    func saveData(userLog:String,userpas:String){
+    private func saveData(userLog:String,userpas:String){
         let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
         let userData = UserDataLogs(entity: UserDataLogs.entity(), insertInto: context)
         userData.setValue(userLog, forKey: "userMailMR")
